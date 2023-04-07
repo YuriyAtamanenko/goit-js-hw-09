@@ -1,6 +1,5 @@
-// Описаний в документації
 import flatpickr from 'flatpickr';
-// Додатковий імпорт стилів
+
 import 'flatpickr/dist/flatpickr.min.css';
 
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
@@ -59,13 +58,11 @@ function onStartTimer() {
 }
 
 function convertMs(ms) {
-
   const second = 1000;
   const minute = second * 60;
   const hour = minute * 60;
   const day = hour * 24;
 
- 
   const days = Math.floor(ms / day);
 
   const hours = Math.floor((ms % day) / hour);
